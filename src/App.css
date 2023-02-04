@@ -53,7 +53,6 @@ body,
     justify-content: space-between;
     margin: 0;
     padding: 0;
-
 }
 
 .container {
@@ -78,7 +77,6 @@ body,
     background: #f1c86d;
     display: inline-flex;
 }
-
 
 .darkmode .card {
     background: #302b28;

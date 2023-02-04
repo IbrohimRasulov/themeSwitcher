@@ -2,7 +2,10 @@ function Card(props) {
     return (
         <div className="card">
             <div className="card--img">
-                <img src={props.item.thumbnailUrl} alt="" />
+                <img
+                    src={props.item.thumbnailUrl}
+                    alt=""
+                />
             </div>
 
             <div className="card--info">

@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 
-import Card from './Card';
+import Card from "./Card";
 
 const Container = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         const getApiData = async () => {
@@ -18,25 +18,24 @@ const Container = () => {
         getApiData();
     }, []);
 
-
     const DisplayCard = () => {
-        return data.map(item => {
+        return data.map((item) => {
             return (
                 <Card
                     key={item.id}
                     item={item}
                 />
             );
-        })
-    }
+        });
+    };
 
     return (
         <div className="container">
-                <ul>
-                    <DisplayCard />
-                </ul>
+            <ul>
+                <DisplayCard />
+            </ul>
         </div>
     );
-}
+};
 
 export default Container;
